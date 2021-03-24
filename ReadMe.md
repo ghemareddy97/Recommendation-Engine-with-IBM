@@ -20,15 +20,17 @@ Basic [Anaconda](https://www.anaconda.com/) installation would be enough to run 
 
 ### Motivation
 
-This project is fascilitated to understand user interactions with articles on the IBM Watson Studio Platform and then recommend new articles that would be most suited for that user.
+This project was designed and built to understand user interactions with articles on the IBM Watson Studio Platform and then recommend new articles that would be most suited for that user.
 
 ### Detailed Analysis
 
 We try out various approaches to this problem.
 
 * Rank based recommendation
+    
     Based on the popularity of an article we make a decision if the article can be recommended or not. This is based on the past data of the article interactions with other users. 
 * User bases collaborative filtering
+    
     Rank based filtering fails to find the best possible articles that a specific user might like. So in addition to the best possible article we would like to group the set of users to based on their article interaction data. We find the most popular articles read by those group of users and recommend them among the users that fall in to the same group of people.
 
 ### Results
